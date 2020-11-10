@@ -1,10 +1,12 @@
 prompt = "Enter your favorite pizza toppings "
-prompt += "Loser!"
+prompt += "Loser!: "
 
-while True:
+active = True
+
+while active:
     topping = input(prompt)
 
     if topping == 'quit':
-        break
+        active = False
     else:
         print(f"Boy that {topping} sure sounds delicious!")
